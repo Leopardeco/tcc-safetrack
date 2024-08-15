@@ -1,14 +1,19 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import { Home } from "./pages/Home"
+import { Membros } from "./pages/Membros"
 import { ThemeProvider } from "styled-components"
 import { theme } from "./styles/theme.js"
 import { GlobalStyle } from "./styles/global.js"
 
 const router = createBrowserRouter([
   {
-    path:"/",
-    element:<Home />,
-  }
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/membros",
+    element: <Membros />,
+  },
 ])
 
 export function App() {
