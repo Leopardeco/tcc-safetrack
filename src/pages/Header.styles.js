@@ -1,13 +1,48 @@
-import styled from "styled-components";
+// Header.styles.js
+import styled from 'styled-components';
 
-export const headContainer = styled.div``
+export const HeadContainer = styled.header`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem;
+`;
 
-export const contContainer = styled.div``
+export const LeftItem = styled.div`
+  flex: 1;
+  img {
+    height: 5rem;
+  }
+`;
 
-export const logoContainer = styled.div``
+export const CenterItemsContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  flex: 2;
+  gap: 2rem;
+`;
 
-export const funContainer = styled.div``
+export const CenterItem = styled.div`
+  margin: 0 10px;
+  text-align: center;
+  display:flex;
+  flex-direction: block;
+  gap: 1rem;
 
-export const techContainer = styled.div``
 
-export const teamContainer = styled.div``    
+
+  img {
+    height: 4rem;
+  }
+
+  p {
+    margin: 5px 0 0 0;
+    font-size: 2rem ;
+    color: #FFF;
+    cursor: pointer;
+  }
+
+  p:hover {
+    color: #007bff;
+  }
+`;
