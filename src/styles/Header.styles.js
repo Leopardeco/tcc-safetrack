@@ -6,7 +6,7 @@ export const HeadContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.25rem;
+  padding: 2rem;
 `;
 
 export const LeftItem = styled.div`
@@ -27,7 +27,6 @@ export const CenterItem = styled.div`
   margin: 0 10px;
   text-align: center;
   display:flex;
-  flex-direction: block;
   gap: 1rem;
 
 
@@ -38,9 +37,12 @@ export const CenterItem = styled.div`
 
   p {
     margin: 5px 0 0 0;
-    font-size: 1.75 ;
+    font-size: 1.75rem ;
+    text-decoration: none;
     cursor: pointer;
     color: ${({ $isActive }) => ($isActive ? '#265B5D' : '#FFF')};
+    border: none;
+    background: none;
   }
 
   p:hover {

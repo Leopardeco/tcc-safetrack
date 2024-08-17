@@ -17,4 +17,5 @@ export const GlobalStyle = createGlobalStyle`
         color: #fff;
         background:${props => props.theme.mainBackground};
     }
+
 `

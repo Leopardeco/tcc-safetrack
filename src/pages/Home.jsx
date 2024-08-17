@@ -20,11 +20,11 @@ export function Home() {
       <img src={aeroporto} alt="foto de um homem em um hall de aeroporto" />
     </MainContainer>
     <CopyContainer>
-        <h1>Imagine viajar com a 
-        certeza de que suas malas estão
+        <h1>Imagine viajar com a <br />
+        certeza de que suas malas estão<br />
         sempre seguras e localizáveis.</h1>
-        <p>O Safetrack é o dispositivo de rastreamento e acompanhamento de malas de 
-        viagem oferece essa tranquilidade, permitindo que você se concentre em 
+        <p>O <span>Safetrack</span> é o dispositivo de rastreamento e acompanhamento de malas de <br />
+        viagem oferece essa tranquilidade, permitindo que você se concentre em <br />
         aproveitar sua jornada, mas ciente da situação da sua bagagem.</p>
     </CopyContainer>
     <PrepareContainer>

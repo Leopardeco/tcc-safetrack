@@ -18,26 +18,34 @@ export function Membros() {
         <NickContainer>
           <img src= {nicolau_foto} alt="" />
           <h2>Nicollas Gomes</h2>
+          <div>
           <img src= {linkedin} alt="" className="link"/>
-          <a className= "link" href="https://www.linkedin.com/in/nicollas-gomes-4479952b9/">Nicollas Gomes</a>
+          <a href="https://www.linkedin.com/in/nicollas-gomes-4479952b9/">Nicollas Gomes</a>
+          </div>
         </NickContainer>
         <MotaContainer>
           <img src= {mota_foto} alt="" />
           <h2>Guilherme Mota</h2>
-          <img src= {linkedin} alt="" className= "link"/>
-          <a className= "link" href="https://www.linkedin.com/in/guilherme-mota-melo/">Guilherme Mota</a>
+          <div>
+          <img src= {linkedin} alt="" className="link" />
+          <a href="https://www.linkedin.com/in/guilherme-mota-melo/">Guilherme Mota</a>
+          </div>
         </MotaContainer>
         <LeoContainer>
           <img src= {leo_foto} alt="" />
           <h2>Leonardo Amaral</h2>
-          <img src= {linkedin} alt="" className= "link"/>
-          <a className= "link" href="https://www.linkedin.com/in/leonardo-amaral-356b602b9/">Leonardo Amaral</a>
+          <div>
+          <img src= {linkedin} alt="" className="link" />
+          <a href="https://www.linkedin.com/in/leonardo-amaral-356b602b9/">Leonardo Amaral</a>
+          </div>
         </LeoContainer>
         <AlanContainer>
           <img src= {alan_foto} alt="" />
           <h2>Alan Cechi</h2>
-          <img src= {linkedin} alt="" className= "link"/>
-          <a className= "link" href="">Alan Cechi</a>
+          <div>
+          <img src= {linkedin} alt="" className="link" />
+          <a href="">Alan Cechi</a>
+          </div>
         </AlanContainer>
       </MainContainer>
     </PrimContainer>
