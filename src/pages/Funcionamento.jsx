@@ -1,5 +1,5 @@
 import {Header} from "./Header"
-import { funcionalidadesContainer, mainContainer, monitoramentoContainer, parearContainer } from "./Funcionamento.styles"
+import { funcionalidadesContainer, mainContainer, monitoramentoContainer, parearContainer } from "../styles/Funcionamento.styles.js"
 import explainimg from "../assets/explainimg.png"
 
 
@@ -7,8 +7,8 @@ import explainimg from "../assets/explainimg.png"
 export function Funcionamento() {
   return (
         <mainContainer>
+            <Header activeItem="funcionamento"/>
             <img src={explainimg} alt="" />
-            <Header></Header>
             <h2>Instruções de Uso do Dispositivo de
             Rastreamento e Monitoramento SafeTrack</h2>
             <parearContainer>

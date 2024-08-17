@@ -6,6 +6,7 @@ import { ThemeProvider } from "styled-components"
 import { theme } from "./styles/theme.js"
 import { GlobalStyle } from "./styles/global.js"
 import { Header } from "./pages/Header.jsx"
+import { Tecnologia } from "./pages/Tecnologia.jsx"
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/header",
     element: <Header />,
+  },
+  {
+    path: "/tecnologia",
+    element: <Tecnologia />,
   },
 ])
 

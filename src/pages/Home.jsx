@@ -1,4 +1,4 @@
-import { CardContainer, MainContainer, CopyContainer, PrepareContainer, ConectContainer, RateContainer } from "./Home.styles.js"
+import { CardContainer, MainContainer, CopyContainer, PrepareContainer, ConectContainer, RateContainer } from "../styles/Home.styles.js"
 import aeroporto from "../assets/aeroporto.png"
 import bgComoUsar from "../assets/bgcomousar.png"
 import {Header} from "./Header"
@@ -11,10 +11,12 @@ import avalie from "../assets/avalie.png"
 export function Home() {
   return (
     <CardContainer>
-      < Header/>
+      < Header activeItem={null}/>
       <MainContainer>
-      <h1>Segurança de Malas</h1>
+      <div className="text-button-container">
+      <h1>Segurança <br />de Malas</h1>
       <button>Saiba Mais</button>
+      </div>
       <img src={aeroporto} alt="foto de um homem em um hall de aeroporto" />
     </MainContainer>
     <CopyContainer>
@@ -71,7 +73,7 @@ solicitar o emparelhamento.</p>
     <RateContainer>
       <h1>Avalie-nos</h1>
       <img src={avalie} alt="foto de um iphone" />
-      <iframe src="https://docs.google.com/forms/d/1LDamaKxiSROsg_U6EO75vuHUhq_KRwnZqsGo2vMNx3E/edit?pli=1" frameborder="0"></iframe>
+      <iframe src="https://forms.gle/iJ3rJegQSEtqtEMm9" frameborder="0"></iframe>
     </RateContainer>
     </CardContainer>
     

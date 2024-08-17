@@ -2,6 +2,7 @@
 import styled from 'styled-components';
 
 export const HeadContainer = styled.header`
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,12 +38,12 @@ export const CenterItem = styled.div`
 
   p {
     margin: 5px 0 0 0;
-    font-size: 2rem ;
-    color: #FFF;
+    font-size: 1.75 ;
     cursor: pointer;
+    color: ${({ $isActive }) => ($isActive ? '#265B5D' : '#FFF')};
   }
 
   p:hover {
-    color: #007bff;
+    color: #265B5D;
   }
 `;
