@@ -12,7 +12,7 @@ export const HeadContainer = styled.header`
 export const LeftItem = styled.div`
   flex: 1;
   img {
-    height: 8rem;
+    height: 6rem;
   }
 `;
 
