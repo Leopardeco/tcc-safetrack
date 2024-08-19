@@ -29,15 +29,6 @@ export const FunctionContainer = styled.div`
   }
 `;
 
-export const HeaderContainer = styled.header`
-  width: 100vw;
-  height: 100vh;
-  background: url(${explainimg}) no-repeat center center;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
 
 export const ParearContainer = styled.div`
   .step {

@@ -27,10 +27,10 @@ export function Home() {
       </MainContainer>
     <CopyContainer ref={copyContainerRef}>
         <h1>Imagine viajar com a 
-        certeza de que <br /> suas malas estão
-        sempre seguras<br /> e localizáveis.</h1>
-        <p>O <span>Safetrack</span> é o dispositivo de rastreamento e <br /> acompanhamento de malas de 
-        viagem oferece <br />essa tranquilidade, permitindo que você se concentre <br />em 
+        certeza de que suas malas estão
+        sempre seguras e localizáveis.</h1>
+        <p>O <span>Safetrack</span> é o dispositivo de rastreamento e acompanhamento de malas de 
+        viagem oferece essa tranquilidade, permitindo que você se concentre  m 
         aproveitar sua jornada, mas ciente da situação da sua bagagem.</p>
     </CopyContainer>
     <PrepareContainer>

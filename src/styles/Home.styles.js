@@ -17,6 +17,15 @@ export const MainContainer = styled.div`
       img{
         visibility: hidden;
       }
+      
+      div.text-button-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left:45rem
+      }
+      
+
     }
 
     div.text-button-container {
@@ -58,6 +67,7 @@ export const CopyContainer = styled.div`
   width: 100%;
   max-width: 900px; 
   min-height: 600px; 
+  flex-wrap: wrap;
   border-radius: 12px; // Bordas arredondadas
   background-color: #333;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); // Sombra suave para criar efeito de card
@@ -65,6 +75,12 @@ export const CopyContainer = styled.div`
   text-align: center; // Alinha o texto ao centro
   margin-inline: auto;
   margin-bottom: 15rem ;
+
+  @media (max-width: 768px) {
+    width: 80%;
+    flex-wrap: wrap
+
+    }
 
   h1 {
     font-size: 4rem; // Tamanho da fonte maior
@@ -130,6 +146,10 @@ export const SectionMultiple = styled.div`
         font-family: "Lexend", sans-serif;
       }
     }
+    @media (max-width: 768px) {
+    flex-wrap: wrap
+
+    }
 `;
 
 
@@ -143,7 +163,14 @@ export const ConectContainer = styled.div`
     flex-direction: column;
     align-items: center;
         
+    @media (max-width: 768px) {
+      display: flex;
+     justify-content: center;
+     div{
+      margin-left: 0.7rem;
+     }
 
+    }
         
       h1 {
         text-align: center;
@@ -213,7 +240,7 @@ export const FormContainer = styled.div`
   iframe {
     border-radius:1rem;
     width: 100%;
-    height: 600px; // Define uma altura fixa para o iframe
+    height: 100vw; // Define uma altura fixa para o iframe
     border: none; // Remove a borda do iframe
   }
 `

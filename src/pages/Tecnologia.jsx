@@ -1,5 +1,6 @@
 import {Header} from "./Header.jsx"
 import arduino from "../assets/arduino.png"
+import arduino from "../assets/arduino.png"
 import { MainContainer } from "../styles/Tecnologia.style.js"
 
 export function Tecnologia() {
