@@ -1,25 +1,31 @@
-import { CardContainer, MainContainer, CopyContainer, PrepareContainer, ConectContainer, RateContainer, SectionMultiple, Conectdiv, CenteredContainer, FormContainer} from "../styles/Home.styles.js"
+import { CardContainer, MainContainer, CopyContainer, PrepareContainer, ConectContainer, RateContainer, SectionMultiple, Conectdiv, CenteredContainer, FormContainer, Title} from "../styles/Home.styles.js"
 import aeroporto from "../assets/aeroporto.png"
 import bgComoUsar from "../assets/bgcomousar.png"
 import {Header} from "./Header"
-import setaum from "../assets/arrow_1.png"
-import setadois from "../assets/arrow_2.png"
-import setatres from "../assets/arrow_3.png"
-import setaquatro from "../assets/arrow_4.png"
 import avalie from "../assets/avalie.png"
+import { useRef } from 'react';
 
 export function Home() {
+  
+  const copyContainerRef = useRef(null);
+
+  // Função para rolar suavemente para o CopyContainer
+  const scrollToCopyContainer = () => {
+    if (copyContainerRef.current) {
+      copyContainerRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <CardContainer>
       < Header activeItem={null}/>
-      <MainContainer>
-      <div className="text-button-container">
-      <h1>Segurança <br />de Malas</h1>
-      <a href="https://www.eurodicas.com.br/seguranca-malas-de-viagem/">Saiba Mais</a>
-      </div>
-      <img src={aeroporto} alt="foto de um homem em um hall de aeroporto" />
-    </MainContainer>
-    <CopyContainer>
+        <MainContainer>
+        <div className="text-button-container">
+        <h1>Segurança <br />de Malas</h1>
+        <a onClick={scrollToCopyContainer}>Saiba Mais</a>
+        </div>
+        <img src={aeroporto} alt="foto de um homem em um hall de aeroporto" />
+      </MainContainer>
+    <CopyContainer ref={copyContainerRef}>
         <h1>Imagine viajar com a 
         certeza de que <br /> suas malas estão
         sempre seguras<br /> e localizáveis.</h1>
@@ -28,11 +34,11 @@ export function Home() {
         aproveitar sua jornada, mas ciente da situação da sua bagagem.</p>
     </CopyContainer>
     <PrepareContainer>
-      <h1>Prepare-se para viajar</h1>
+      <Title>Prepare-se para viajar</Title>
       <SectionMultiple>
         <section>
-        <img src={setaum} alt="Seta apontando para direita com o número 1" />
-        <h2>1.Posicione o <br />
+       
+        <h2>1. Posicione o <br />
         SafeTrack</h2>
         <p>Coloque o dispositivo <br />
         SafeTrack dentro da<br />
@@ -40,16 +46,16 @@ export function Home() {
         ou mala despachada.</p>
         </section>
         <section >
-        <img src={setadois} alt="Seta apontando para direita com o número 2" />
-        <h2>2.Ligue o <br />
+      
+        <h2>2. Ligue o <br />
         SafeTrack</h2>
         <p>Ligue o dispositivo<br />
         SafeTrack pressionado<br />
         o botão liga/desliga.</p>
         </section>
         <section >
-        <img src={setatres} alt="Seta apontando para direita com o número 3" />
-        <h2>3.Baixe o <br />
+
+        <h2>3. Baixe o <br />
         Aplicativo</h2>
         <p>Baixe o aplicativo<br />
         Safetrackapp<br />
@@ -57,8 +63,8 @@ export function Home() {
         Store ou Google Play.</p>
         </section>
         <section>
-        <img src={setaquatro} alt="Seta apontando para direita com o número 4" />
-        <h2>4.Abra o<br />
+
+        <h2>4. Abra o<br />
         Aplicativo</h2>
         <p>Abra o aplicativo<br />
         SafeTrackapp em seu<br />

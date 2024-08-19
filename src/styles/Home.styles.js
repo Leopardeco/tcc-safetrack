@@ -3,24 +3,31 @@ import bgComoUsar from "../assets/bgcomousar.png"
 import avalie from "../assets/avalie.png"
 
 export const CardContainer = styled.div`
+overflow: hidden;
 `
 
 export const MainContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    height: 100vh; /* Ocupa toda a altura da viewport */
+    width: 100vw; /* Ocupa toda a largura da viewport */
+    
+    @media (max-width: 768px) {
+      img{
+        visibility: hidden;
+      }
+    }
 
     div.text-button-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 7rem;
 
     h1 {
-      font-size:70px;
-      margin-left:5rem;
+      font-size:75px;
+      margin-left: 8rem;
       margin-bottom: 15rem; 
       font-family: "Alexandria", sans-serif;
     }
@@ -34,10 +41,15 @@ export const MainContainer = styled.div`
       cursor: pointer;
       text-decoration: none;
     }
+
+    a:hover{
+      color:${props => props.theme.buttonCollor};
+      background-color:#fff;
+    }
   }
 
   img {
-    max-width: 100%;
+    max-width: 70%;
     height: auto;
   }
 `
@@ -47,7 +59,7 @@ export const CopyContainer = styled.div`
   max-width: 900px; 
   min-height: 600px; 
   border-radius: 12px; // Bordas arredondadas
-  background-color: #545454;
+  background-color: #333;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); // Sombra suave para criar efeito de card
   padding: 2rem; // Espaçamento interno
   text-align: center; // Alinha o texto ao centro
@@ -75,63 +87,54 @@ export const CopyContainer = styled.div`
 `;
 
 export const PrepareContainer = styled.div`
-  display: flex;
-  flex-direction: column; /* Alinha o título e o SectionMultiple verticalmente */
-  align-items: center;
-  justify-content: space-between;
-  background-image: url(${bgComoUsar});
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-
-  h1 {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 8px;
+`;
+export const Title = styled.div`
     color: white;
     margin-top: 5rem; /* Espaçamento entre o título e as sections */
-    margin-bottom: 15rem; /* Espaçamento entre o título e as sections */
+    margin-bottom: 7rem; /* Espaçamento entre o título e as sections */
     text-align: center;
-    font-size:80px;
-  }
-
-  section {
-    gap:2rem;
-    display: flex;
-    flex-direction: column; /* Garante que o conteúdo das sections esteja em coluna */
-    align-items: center;
-    text-align: center;
-    margin: 0 2rem; /* Espaçamento entre as sections */
-    color: white;
-  }
-
-
-  section img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 5rem;
-}
-
-/* Estilo para os títulos */
-section h2 {
-    font-size: 32px;
-    margin-bottom:3rem;
-}
-
-/* Estilo para os parágrafos */
-section p {
-    font-family: "Lexend", sans-serif;
-    font-size: 18px;
-}
-`;
+    font-size:32px;
+`
 
 export const SectionMultiple = styled.div`
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-bottom:45rem;
+    display: flex;
+    flex-direction: row; /* Alinha as seções horizontalmente */
+    justify-content: center;
+    
+    gap: 30px; 
+
+    section {
+      display: flex;
+      flex-direction: column;
+      min-width: 300px;
+      gap: 15px;
+      background-color:#333;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+      h2 {
+        font-size: 18px;
+        color: #fff;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 2rem;
+        color: #fff;
+        line-height: 1.4;
+        font-family: "Lexend", sans-serif;
+      }
+    }
 `;
 
 
 export const ConectContainer = styled.div`
-    margin-top:5rem;     
+    margin-top:7rem;     
     width: 100%;
     max-width: 1000px;
     border-radius: 8px;
@@ -144,7 +147,7 @@ export const ConectContainer = styled.div`
         
       h1 {
         text-align: center;
-        margin-bottom: 5rem;
+        margin-bottom: 7rem;
     }
 
     
@@ -208,6 +211,7 @@ export const FormContainer = styled.div`
   width: 100%;
   max-width: 1200px; // Define uma largura máxima para o contêiner do formulário
   iframe {
+    border-radius:1rem;
     width: 100%;
     height: 600px; // Define uma altura fixa para o iframe
     border: none; // Remove a borda do iframe
