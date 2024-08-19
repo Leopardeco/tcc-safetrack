@@ -2,10 +2,8 @@ import styled from "styled-components";
 import explainimg from "../assets/explainimg.png";
 
 export const FunctionContainer = styled.div`
-  font-family: Arial, sans-serif;
-  color: #201E1F;
-  margin: 0;
-  padding: 0;
+
+  
 
   h2 {
     margin-top: 20px;
@@ -27,10 +25,14 @@ export const FunctionContainer = styled.div`
     padding-left: 0; /* Remove o padding à esquerda */
     text-align: left; /* Garante que o texto fique alinhado à esquerda */
   }
+  
 `;
 
 
 export const ParearContainer = styled.div`
+  width:80%;
+  margin: auto;
+
   .step {
     display: flex;
     align-items: center;
@@ -61,11 +63,12 @@ export const ParearContainer = styled.div`
   }
 
   p {
+    color: #201E1F;
     margin-top: 10px;
     font-size: 16px;
     line-height: 1.5;
+    font-family: "Lexend", sans-serif;
   }
 `;
 
-export const MonitoramentoContainer = styled(ParearContainer)``;
-export const FuncionalidadesContainer = styled(ParearContainer)``;
+

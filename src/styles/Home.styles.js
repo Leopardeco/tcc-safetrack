@@ -103,7 +103,7 @@ export const CopyContainer = styled.div`
 `;
 
 export const PrepareContainer = styled.div`
-  padding: 20px;
+  padding: 1.25rem;
   max-width: 800px;
   margin: 0 auto;
   border-radius: 8px;
@@ -127,7 +127,7 @@ export const SectionMultiple = styled.div`
       display: flex;
       flex-direction: column;
       min-width: 300px;
-      gap: 15px;
+      gap: 1.875rem;
       background-color:#333;
       padding: 15px;
       border-radius: 8px;
@@ -181,7 +181,7 @@ export const ConectContainer = styled.div`
     
       div {
         flex: 1;
-        padding: 20px;
+        padding: 1.25rem;
         border-left: 1px solid #ddd;
     }
 
@@ -200,7 +200,7 @@ export const ConectContainer = styled.div`
 
     
       p {
-        margin: 5px 0 0;
+        margin: .300rem 0 0;
         color: #fff;
         font-family: "Lexend", sans-serif;
     }

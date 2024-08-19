@@ -1,18 +1,16 @@
 import { Header } from "./Header";
 import {
-  FuncionalidadesContainer,
   FunctionContainer,
-  MonitoramentoContainer,
   ParearContainer,
 } from "../styles/Funcionamento.styles.js";
 import explainimg from "../assets/explainimg.png";
 
 export function Funcionamento() {
   return (
-  
+  /*tem que ter um container para dividir o header dessa div e desse h1 se nao vai ficar mexendo no header junto*/
     <FunctionContainer>
       <Header activeItem="funcionamento" />
-      <img src={explainimg} alt="Ilustração do SafeTrack" />
+      <div className="img-container"><img src={explainimg} alt="Ilustração do SafeTrack" /></div>
       <h2>
         Instruções de Uso do Dispositivo de Rastreamento e Monitoramento
         SafeTrack
@@ -30,7 +28,7 @@ export function Funcionamento() {
           </div>
         </div>
       </ParearContainer>
-      <MonitoramentoContainer>
+      <ParearContainer>
         <div className="step">
           <div className="numero">2</div>
           <div>
@@ -41,8 +39,8 @@ export function Funcionamento() {
             </p>
           </div>
         </div>
-      </MonitoramentoContainer>
-      <FuncionalidadesContainer>
+      </ParearContainer>
+      <ParearContainer>
         <div className="step">
           <div className="numero">3</div>
           <div>
@@ -53,7 +51,7 @@ export function Funcionamento() {
             </p>
           </div>
         </div>
-      </FuncionalidadesContainer>
+      </ParearContainer>
       <h2>Estas etapas garantem a configuração e uso eficaz do SafeTrack. </h2>
     </FunctionContainer>
   );

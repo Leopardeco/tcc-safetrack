@@ -7,6 +7,7 @@ export const HeadContainer = styled.header`
   align-items: center;
   padding: 1.5rem; /* Reduzi o padding para deixar o header menor */
   position: relative;
+  margin-bottom:15rem;
 `;
 
 export const LeftItem = styled.div`
