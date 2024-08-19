@@ -1,74 +1,159 @@
 import styled from "styled-components";
 import explainimg from "../assets/explainimg.png";
 
-export const FunctionContainer = styled.div`
+export const ImagemContainer = styled.div`
+  img {
+    width: 100%;
+    height: auto;
+    max-height: 62.5rem;
+    object-fit: cover;
+    margin-top: -15.625rem;
 
-  
+    @media (max-width: 768px) {
+      margin-top: -10rem;
+      max-height: 40rem;
+    }
 
+    @media (max-width: 480px) {
+      margin-top: -5rem;
+      max-height: 30rem;
+    }
+  }
+`;
+
+export const EtapasContainer = styled.div`
   h2 {
-    margin-top: 20px;
-    font-size: 24px;
+    font-size: 3rem;
+    padding: 1.875rem;
+    display: flex;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+      font-size: 2.5rem;
+      padding: 1.25rem;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 2rem;
+      padding: 1rem;
+    }
+  }
+`;
+
+export const MainContainer = styled.div``;
+
+export const FunctionContainer = styled.div`
+  h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+
+    @media (max-width: 768px) {
+      font-size: 2.5rem;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 2rem;
+    }
   }
 
   p {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.5;
-  }
 
-  ul {
-    padding-left: 0; /* Remove o padding padrão */
-    list-style-position: inside; /* Alinha o texto do tópico com o símbolo */
-  }
+    @media (max-width: 768px) {
+      font-size: 0.875rem;
+    }
 
-  li {
-    margin-left: 0; /* Remove a margem padrão à esquerda */
-    padding-left: 0; /* Remove o padding à esquerda */
-    text-align: left; /* Garante que o texto fique alinhado à esquerda */
+    @media (max-width: 480px) {
+      font-size: 0.75rem;
+    }
   }
-  
 `;
 
+export const HeaderContainer = styled.div`
+  margin-bottom: 0rem;
+`;
 
 export const ParearContainer = styled.div`
-  width:80%;
-  margin: auto;
+  margin: 2rem 10rem;
+
+  @media (max-width: 768px) {
+    margin: 2rem 5rem;
+  }
+
+  @media (max-width: 480px) {
+    margin: 1rem 2rem;
+  }
 
   .step {
     display: flex;
     align-items: center;
     background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
+    border-radius: 1.5rem;
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   .numero {
     background-color: #201e1f;
     color: #fff;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: bold;
-    padding: 10px;
+    padding: 0.625rem;
     border-radius: 50%;
-    margin-right: 20px;
-    width: 50px;
-    height: 50px;
+    margin-right: 1.25rem;
+    width: 3.125rem;
+    height: 3.125rem;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 480px) {
+      font-size: 1.5rem;
+      width: 2.5rem;
+      height: 2.5rem;
+    }
   }
 
   h2 {
-    font-size: 24px;
-    color: #201E1F;
+    font-size: 2rem;
+    color: #201e1f;
+
+    @media (max-width: 768px) {
+      font-size: 1.75rem;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 1.5rem;
+    }
   }
 
   p {
-    color: #201E1F;
-    margin-top: 10px;
-    font-size: 16px;
+    color: #201e1f;
+    margin-top: 0.625rem;
+    font-size: 1rem;
     line-height: 1.5;
     font-family: "Lexend", sans-serif;
+
+    @media (max-width: 768px) {
+      font-size: 0.875rem;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 0.75rem;
+    }
   }
 `;
-
-

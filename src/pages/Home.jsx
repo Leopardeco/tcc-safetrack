@@ -99,7 +99,7 @@ export function Home() {
     <RateContainer>
       <h1>Avalie-nos</h1>
       <FormContainer>
-      <iframe src="https://forms.gle/iJ3rJegQSEtqtEMm9" frameborder="0"></iframe>
+      <iframe src="https://forms.gle/iJ3rJegQSEtqtEMm9" frameBorder="0"></iframe>
       </FormContainer>
       
     </RateContainer>

@@ -7,6 +7,17 @@ export const PrimContainer = styled.div`
     height: 100vh;
 `
 
+export const TitleContainer = styled.div`
+    h1{
+        font-size: 6rem;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8rem;
+    }
+`
+
 export const HeadContainer = styled.div`
 `
 

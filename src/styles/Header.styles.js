@@ -5,16 +5,15 @@ export const HeadContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem; /* Reduzi o padding para deixar o header menor */
+  padding: 1.5rem;
   position: relative;
-  margin-bottom:15rem;
 `;
 
 export const LeftItem = styled.div`
   flex: 1;
 
   img {
-    height: 4rem; /* Diminuí o tamanho da imagem para reduzir a altura do header */
+    height: 4rem;
   }
 `;
 
@@ -50,7 +49,7 @@ export const CenterItemsContainer = styled.div`
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 8rem; /* Ajustei a posição para combinar com o novo tamanho do header */
+    top: 8rem;
     right: 2rem;
     background-color: #201e1f;
     padding: 1rem;
@@ -64,18 +63,17 @@ export const CenterItemsContainer = styled.div`
 `;
 
 export const CenterItem = styled.div`
-  margin: 0 8px; /* Diminuí a margem lateral para tornar o layout mais compacto */
+  margin: 0 8px;
   text-align: center;
   display: flex;
-  gap: 0.75rem; /* Reduzi o gap entre o ícone e o texto */
-
+  gap: 0.75rem;
   img {
-    height: 4rem; /* Diminuí o tamanho da imagem para ficar consistente com o header menor */
+    height: 4rem;
   }
 
   p {
     margin: 4px 0 0 0;
-    font-size: 2.5rem; /* Reduzi o tamanho da fonte para um visual mais formal e compacto */
+    font-size: 2.5rem; 
     text-decoration: none;
     cursor: pointer;
     color: ${({ $isActive }) => ($isActive ? '#265B5D' : '#FFF')};

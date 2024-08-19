@@ -1,4 +1,4 @@
-import { PrimContainer, HeadContainer, MainContainer, NickContainer, MotaContainer, LeoContainer, AlanContainer } from "../styles/Membros.styles.js"
+import { PrimContainer, HeadContainer, MainContainer, NickContainer, MotaContainer, LeoContainer, AlanContainer, TitleContainer } from "../styles/Membros.styles.js"
 import {Header} from "./Header"
 import leo_foto from "../assets/leo.png"
 import mota_foto from "../assets/mota.png"
@@ -8,12 +8,16 @@ import linkedin from "../assets/linkedin.png"
 
 
 
+
 export function Membros() {
   return (
     <PrimContainer>
       <HeadContainer>
         < Header activeItem="equipe"/>
       </HeadContainer>
+      <TitleContainer>
+          <h1>Membros</h1>
+        </TitleContainer>
       <MainContainer>
         <NickContainer>
           <img src= {nicolau_foto} alt="" />
