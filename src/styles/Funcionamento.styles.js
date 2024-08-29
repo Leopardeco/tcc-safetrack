@@ -79,11 +79,18 @@ export const FunctionContainer = styled.div`
 `;
 
 export const HeaderContainer = styled.div`
-  margin-bottom: 0rem;
 `;
 
+export const GroupContainer = styled.div`
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`
+
 export const ParearContainer = styled.div`
-  margin: 2rem 10rem;
+
 
   @media (max-width: 768px) {
     margin: 2rem 5rem;
@@ -94,12 +101,15 @@ export const ParearContainer = styled.div`
   }
 
   .step {
+    width: 30vw;
+    height: 10vh;
     display: flex;
     align-items: center;
     background-color: #fff;
     border-radius: 1.5rem;
     padding: 1.25rem;
     margin-bottom: 1.25rem;
+    text-align: center;
 
     @media (max-width: 768px) {
       flex-direction: column;

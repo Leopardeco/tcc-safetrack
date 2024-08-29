@@ -14,6 +14,7 @@ export const MainContainer = styled.div`
     width: 100vw; /* Ocupa toda a largura da viewport */
     
     @media (max-width: 768px) {
+      width:100vw;
       img{
         visibility: hidden;
       }
@@ -22,7 +23,11 @@ export const MainContainer = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left:45rem
+        margin-left:20rem;
+
+        h1{
+          font-size:1rem;
+        }
       }
       
 
@@ -68,25 +73,19 @@ export const CopyContainer = styled.div`
   max-width: 900px; 
   min-height: 600px; 
   flex-wrap: wrap;
-  border-radius: 12px; // Bordas arredondadas
+  border-radius: 12px; 
   background-color: #333;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); // Sombra suave para criar efeito de card
-  padding: 2rem; // Espaçamento interno
-  text-align: center; // Alinha o texto ao centro
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center; 
   margin-inline: auto;
   margin-bottom: 15rem ;
 
-  @media (max-width: 768px) {
-    width: 80%;
-    flex-wrap: wrap
-
-    }
-
   h1 {
-    font-size: 4rem; // Tamanho da fonte maior
-    margin-block: 5rem; // Espaçamento abaixo do título
-    line-height: 1.4; // Melhora a legibilidade do título
-    color: #fff; // Cor do texto
+    font-size: 4rem;
+    margin-block: 5rem;
+    line-height: 1.4; 
+    color: #fff;
   }
 
   p {
@@ -100,6 +99,23 @@ export const CopyContainer = styled.div`
     font-weight: bold; // Destaca o texto
     color: #fff; // Cor destacada para o texto
   }
+
+  @media (max-width: 768px) {
+    width: 80%;
+    
+    
+    
+    h1{
+      font-size:2rem;
+      margin-block:2rem;
+    }
+
+    p{
+      font-size: 1rem;
+      
+    }
+    
+    }
 `;
 
 export const PrepareContainer = styled.div`
@@ -154,56 +170,56 @@ export const SectionMultiple = styled.div`
 
 
 export const ConectContainer = styled.div`
-    margin-top:7rem;     
-    width: 100%;
-    max-width: 1000px;
-    border-radius: 8px;
-    padding: 1.5rem;
+  margin-top: 7rem;
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 7rem;
+  }
+
+  div {
+    flex: 1;
+    padding: 1.25rem;
+  }
+
+  .borda {
+    border-left: 1px solid #ddd;
+  }
+
+  h2 {
+    margin-bottom: 2rem;
+    font-size: 18px;
+    color: #fff;
+  }
+
+  p {
+    margin: .300rem 0 0;
+    color: #fff;
+    font-family: "Lexend", sans-serif;
+  }
+
+
+  @media (max-width: 768px) {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-        
-    @media (max-width: 768px) {
-      display: flex;
-     justify-content: center;
-     div{
+    justify-content: center;
+
+    div {
       margin-left: 0.7rem;
-     }
-
-    }
-        
-      h1 {
-        text-align: center;
-        margin-bottom: 7rem;
+      flex-wrap: wrap;
     }
 
-    
-    
-      div {
-        flex: 1;
-        padding: 1.25rem;
-        border-left: 1px solid #ddd;
+    .borda {
+      border-top: 1px solid #ddd;
+      border-left: 0;
     }
-
-    
-      div:first-child {
-        border-left: none;
-
-    }
-
-    
-      h2 {
-        margin-bottom: 2rem;
-        font-size: 18px;
-        color: #fff;
-    }
-
-    
-      p {
-        margin: .300rem 0 0;
-        color: #fff;
-        font-family: "Lexend", sans-serif;
-    }
+  }
 `
 
 export const Conectdiv = styled.div`
@@ -222,25 +238,34 @@ export const CenteredContainer = styled.div`
 export const RateContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center; // Centraliza horizontalmente
+  align-items: center; 
   width: 100%;
-  min-height: 100vh; // Garante que o contêiner ocupe a altura total da viewport
   padding: 2rem;
-  h1{
-    margin-bottom:5rem;
+  gap: 5rem;
+  margin-bottom:3rem; 
+
+
+  p{
+    max-width: 700px;
+    flex-wrap:wrap;
+    text-align: center;
+    font-family: "Lexend", sans-serif;
   }
+
+  a {
+      background-color:${props => props.theme.buttonCollor};
+      color: #fff;
+      font-size:25px;
+      padding:15px 30px;
+      border-radius: 10px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    a:hover{
+      color:${props => props.theme.buttonCollor};
+      background-color:#fff;
+    }
     
 `
-export const FormContainer = styled.div`
 
-  display: flex;
-  justify-content: center; // Posiciona o iframe à direita
-  width: 100%;
-  max-width: 1200px; // Define uma largura máxima para o contêiner do formulário
-  iframe {
-    border-radius:1rem;
-    width: 100%;
-    height: 100vw; // Define uma altura fixa para o iframe
-    border: none; // Remove a borda do iframe
-  }
-`

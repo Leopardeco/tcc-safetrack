@@ -41,7 +41,7 @@ export const CenterItemsContainer = styled.div`
   flex: 2;
   gap: 1.5rem; /* Reduzi o gap entre os itens centrais */
 
-  p {
+  a {
     text-decoration: none;
   }
 

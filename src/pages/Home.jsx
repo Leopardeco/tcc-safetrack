@@ -1,4 +1,4 @@
-import { CardContainer, MainContainer, CopyContainer, PrepareContainer, ConectContainer, RateContainer, SectionMultiple, Conectdiv, CenteredContainer, FormContainer, Title} from "../styles/Home.styles.js"
+import { CardContainer, MainContainer, CopyContainer, PrepareContainer, ConectContainer, RateContainer, SectionMultiple, Conectdiv, CenteredContainer, Title} from "../styles/Home.styles.js"
 import aeroporto from "../assets/aeroporto.png"
 import bgComoUsar from "../assets/bgcomousar.png"
 import {Header} from "./Header"
@@ -81,14 +81,14 @@ export function Home() {
             <p>Ative o Bluetooth em seu 
             smartphone.</p>
           </div>
-          <div>
+          <div className="borda">
             <h2>Emparelhamento</h2>
             <p>O aplicativo SafeTrackApp irá procurar 
             automaticamente o
             dispositivo SafeTrack e 
             solicitar o emparelhamento.</p>
           </div>
-          <div>
+          <div className="borda">
             <h2>Confirmação</h2>
             <p>Confirme o emparelhamento
             no aplicativo SafeTrackApp.</p>
@@ -98,10 +98,8 @@ export function Home() {
     </CenteredContainer>
     <RateContainer>
       <h1>Avalie-nos</h1>
-      <FormContainer>
-      <iframe src="https://forms.gle/iJ3rJegQSEtqtEMm9" frameBorder="0"></iframe>
-      </FormContainer>
-      
+      <p>Olá, Tester! Gostaríamos muito da sua ajuda para avaliar o nosso site Safe Track. Seu feedback é essencial para melhorarmos e oferecermos uma experiência ainda melhor. Visite o Safe Track e compartilhe suas impressões conosco. Sua opinião faz toda a diferença! Agradecemos desde já pela sua contribuição.</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSe9q5HVgD9xndb_w-Pv_R2JLdimY7jIXMdTU4TK6CcPK39ABw/viewform" target="_blank">Formulário</a>
     </RateContainer>
     </CardContainer>
     

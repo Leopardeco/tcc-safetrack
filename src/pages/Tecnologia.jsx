@@ -25,7 +25,7 @@ export function Tecnologia() {
             <MainContainer>
                 <TitleContainer>
                     <h1>
-                        Tecnologias Usadas
+                        Tecnologias usadas
                     </h1>
                 </TitleContainer>
                 <ArduinoContainer>
