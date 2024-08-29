@@ -11,30 +11,15 @@ export const MainContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 100vh; 
+    height: 90vh; 
     width: 100vw; 
-    
-    @media (max-width: 768px) {
-      text-align: center;
-      width: 100vw;
+  
 
-      img{
-        visibility: hidden;
-      }
-      
-      .text-button-container h1 {
-        font-size:15rem;
-      }
-      
-      
-      
-
-    }
-
-    div.text-button-container {
+    .text-button-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 5rem;
 
     h1 {
       font-size:75px;
@@ -46,10 +31,14 @@ export const MainContainer = styled.div`
       background-color:${props => props.theme.buttonCollor};
       color: #fff;
       font-size:50px;
-      padding:15px 30px;
+      width: 100%;
+      height: 8rem;
       border-radius: 10px;
       cursor: pointer;
       text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     a:hover{
@@ -58,11 +47,22 @@ export const MainContainer = styled.div`
     }
 
     @media (max-width: 768px) {
-
+      margin-left: 0;
+      
+      
       h1{
         
         font-size:5rem;
         text-align: center;
+      }
+
+      a{
+        font-size: 3.5rem;
+      }
+
+      img{
+        display:none;
+        
       }
     }
   }
@@ -70,6 +70,11 @@ export const MainContainer = styled.div`
   img {
     max-width: 70%;
     height: auto;
+    display: block; 
+    
+    @media (max-width: 768px) {
+      display: none; 
+    }
   }
 `
 
