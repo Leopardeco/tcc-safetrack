@@ -4,31 +4,29 @@ import avalie from "../assets/avalie.png"
 
 export const CardContainer = styled.div`
 overflow: hidden;
+
 `
 
 export const MainContainer = styled.div`
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 100vh; /* Ocupa toda a altura da viewport */
-    width: 100vw; /* Ocupa toda a largura da viewport */
+    justify-content: space-around;
+    height: 100vh; 
+    width: 100vw; 
     
     @media (max-width: 768px) {
-      width:100vw;
+      text-align: center;
+      width: 100vw;
+
       img{
         visibility: hidden;
       }
       
-      div.text-button-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left:20rem;
-
-        h1{
-          font-size:1rem;
-        }
+      .text-button-container h1 {
+        font-size:15rem;
       }
+      
+      
       
 
     }
@@ -36,12 +34,10 @@ export const MainContainer = styled.div`
     div.text-button-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 
     h1 {
       font-size:75px;
-      margin-left: 8rem;
       margin-bottom: 15rem; 
       font-family: "Alexandria", sans-serif;
     }
@@ -59,6 +55,15 @@ export const MainContainer = styled.div`
     a:hover{
       color:${props => props.theme.buttonCollor};
       background-color:#fff;
+    }
+
+    @media (max-width: 768px) {
+
+      h1{
+        
+        font-size:5rem;
+        text-align: center;
+      }
     }
   }
 
@@ -102,16 +107,19 @@ export const CopyContainer = styled.div`
 
   @media (max-width: 768px) {
     width: 80%;
+    min-height: auto;
+    margin-bottom: 10rem ;
     
     
     
     h1{
-      font-size:2rem;
+      font-size:2.5rem;
       margin-block:2rem;
     }
 
     p{
-      font-size: 1rem;
+      font-size: 1.75rem;
+      margin-bottom:2rem;
       
     }
     

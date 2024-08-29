@@ -6,11 +6,13 @@ export const GeralContainer = styled.div`
   min-height: 100vh;
   background-color:${props => props.theme.mainBackground};
   
+  @media (max-width: 768px) {
+      width: 100vw;
+}
 `;
 
 
 export const HeadContainer = styled.header`
-  
 
 `;
 
@@ -25,7 +27,9 @@ export const MainContainer = styled.main`
   @media (max-width: 768px) {
     flex-direction:row;
     flex-wrap:wrap;
-    margin-inline:3rem;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
 
     p{
       font-size:.5rem;
@@ -34,6 +38,11 @@ export const MainContainer = styled.main`
     h2{
       font-size:.5rem;
     }
+  }
+
+  @media (max-width: 350px) {
+    width: 100vw;
+
   }
 `;
 
@@ -47,6 +56,19 @@ export const TitleContainer = styled.div`
     margin-block: 6rem;
     font-size: 6rem;
     font-weight: 900;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    width: 100vw;
+
+    }
+  
+  @media (max-width: 350px) {
+    h1{
+      width: 100vw;
+      font-size: 5rem;
+    }
   }
 `
 
@@ -62,13 +84,11 @@ export const ArduinoContainer = styled.section`
 
   div{
     gap:5rem;
-    margin-left:4rem;
-    margin-right:10rem;
     max-width: 400px;
   }
 
   h2 {
-    font-size: 2.4rem;
+    font-size: 3.75rem;
     color: #ddd;
     margin-bottom: 2rem;
   }
@@ -82,11 +102,27 @@ export const ArduinoContainer = styled.section`
 
   p {
     margin-top: 2rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #ddd;
     line-height: 1.6;
     font-family: "Lexend", sans-serif;
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    width: 80vw;
+    margin-inline: 4rem;
+  }
+
+  @media (max-width: 350px) {
+    h2{
+      font-size: 3rem;
+    }
+    img{
+
+    }
+  }
+
 `;
 
 export const LdrContainer = styled.section`
@@ -101,12 +137,11 @@ export const LdrContainer = styled.section`
 
   div{
     gap:5rem;
-    margin-left:4rem;
     max-width: 400px;
   }
 
   h2 {
-    font-size: 2.4rem;
+    font-size: 3.75rem;
     color: #000;
     margin-bottom: 2rem;
   }
@@ -119,10 +154,25 @@ export const LdrContainer = styled.section`
   }
 
   p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #000;
     line-height: 1.6;
     font-family: "Lexend", sans-serif;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    width: 80vw;
+    margin-inline: 4rem;
+    }
+
+  @media (max-width: 350px) {
+    h2{
+      font-size: 3rem;
+    }
+    img{
+      width: 80vw;
+    }
   }
 `;
 
@@ -138,12 +188,11 @@ export const GpsContainer = styled.section`
 
   div{
     gap:5rem;
-    margin-left:4rem;
     max-width: 400px;
   }
 
   h2 {
-    font-size: 2.4rem;
+    font-size: 3.75rem;
     color: #ddd;
     margin-bottom: 2rem;
   }
@@ -156,10 +205,25 @@ export const GpsContainer = styled.section`
   }
 
   p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #ddd;
     line-height: 1.6;
     font-family: "Lexend", sans-serif;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    width: 80vw;
+    margin-inline: 4rem;
+    }
+
+  @media (max-width: 350px) {
+    h2{
+      font-size: 3rem;
+    }
+    img{
+      width: 80vw;
+    }
   }
 `;
 
@@ -175,12 +239,11 @@ export const RadarContainer = styled.section`
 
   div{
     gap:5rem;
-    margin-left:4rem;
     max-width: 400px;
   }
 
   h2 {
-    font-size: 2.4rem;
+    font-size: 3.75rem;
     color: #000;
     margin-bottom: 2rem;
   }
@@ -193,10 +256,25 @@ export const RadarContainer = styled.section`
   }
 
   p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #000;
     line-height: 1.6;
     font-family: "Lexend", sans-serif;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    width: 80vw;
+    margin-inline: 4rem;
+    }
+
+  @media (max-width: 350px) {
+    h2{
+      font-size: 3rem;
+    }
+    img{
+      width: 80vw;
+    }
   }
 `;
 
@@ -213,12 +291,11 @@ export const AdaptadorContainer = styled.section`
 
   div{
     gap:5rem;
-    margin-left:4rem;
     max-width: 400px;
   }
 
   h2 {
-    font-size: 2.4rem;
+    font-size: 3.75rem;
     color: #ddd;
     margin-bottom: 2rem;
   }
@@ -231,9 +308,24 @@ export const AdaptadorContainer = styled.section`
   }
 
   p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #ddd;
     line-height: 1.6;
     font-family: "Lexend", sans-serif;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    width: 80vw;
+    margin-inline: 4rem;
+    }
+
+  @media (max-width: 350px) {
+    h2{
+      font-size: 3rem;
+    }
+    img{
+      width: 80vw;
+    }
   }
 `;

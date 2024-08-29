@@ -15,7 +15,7 @@ export const ImagemContainer = styled.div`
     }
 
     @media (max-width: 480px) {
-      margin-top: -5rem;
+      margin-top: -8rem;
       max-height: 30rem;
     }
   }
@@ -56,7 +56,7 @@ export const FunctionContainer = styled.div`
     margin-bottom: 1.25rem;
 
     @media (max-width: 768px) {
-      font-size: 2.5rem;
+      font-size: 3rem;
     }
 
     @media (max-width: 480px) {
@@ -64,18 +64,6 @@ export const FunctionContainer = styled.div`
     }
   }
 
-  p {
-    font-size: 1rem;
-    line-height: 1.5;
-
-    @media (max-width: 768px) {
-      font-size: 0.875rem;
-    }
-
-    @media (max-width: 480px) {
-      font-size: 0.75rem;
-    }
-  }
 `;
 
 export const HeaderContainer = styled.div`
@@ -93,12 +81,16 @@ export const ParearContainer = styled.div`
 
 
   @media (max-width: 768px) {
-    margin: 2rem 5rem;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-block: 2rem ;
+
   }
 
   @media (max-width: 480px) {
-    margin: 1rem 2rem;
   }
+  
 
   .step {
     width: 30vw;
@@ -113,7 +105,14 @@ export const ParearContainer = styled.div`
 
     @media (max-width: 768px) {
       flex-direction: column;
-      align-items: flex-start;
+      width: 70vw;
+      height: 30vh;
+    }
+
+    @media (max-width: 480px) {
+      flex-direction: column;
+      width: 70vw;
+      height: 30vh;
     }
   }
 
@@ -131,10 +130,16 @@ export const ParearContainer = styled.div`
     align-items: center;
     justify-content: center;
 
+    @media (max-width: 768px) {
+      width: 5rem;
+      height: 5rem;
+      font-size: 2.5rem;
+    }
+
     @media (max-width: 480px) {
-      font-size: 1.5rem;
-      width: 2.5rem;
-      height: 2.5rem;
+      font-size: 2rem;
+      width: 4rem;
+      height: 4rem;
     }
   }
 
@@ -143,11 +148,12 @@ export const ParearContainer = styled.div`
     color: #201e1f;
 
     @media (max-width: 768px) {
-      font-size: 1.75rem;
+      font-size: 2.5rem;
+      padding-block: 2rem;
     }
 
     @media (max-width: 480px) {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
   }
 
@@ -159,11 +165,17 @@ export const ParearContainer = styled.div`
     font-family: "Lexend", sans-serif;
 
     @media (max-width: 768px) {
-      font-size: 0.875rem;
+      font-size: 2.5rem;
     }
 
     @media (max-width: 480px) {
-      font-size: 0.75rem;
+      font-size: 2rem;
+      font-weight: 500;
+    }
+
+    @media (max-width: 320px) {
+      font-size: 1.5rem;
+      font-weight: 600;
     }
   }
 `;
