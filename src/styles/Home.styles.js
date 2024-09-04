@@ -198,7 +198,8 @@ export const ConectContainer = styled.div`
   }
 
   div {
-    flex: 1;
+    align-items: center;
+    gap: 1.5rem;
     padding: 1.25rem;
   }
 
@@ -213,11 +214,10 @@ export const ConectContainer = styled.div`
   }
 
   p {
-    margin: .300rem 0 0;
+    margin: .3rem 0 0;
     color: #fff;
     font-family: "Lexend", sans-serif;
   }
-
 
   @media (max-width: 768px) {
     display: flex;
@@ -227,7 +227,6 @@ export const ConectContainer = styled.div`
       margin-left: 0.7rem;
       flex-wrap: wrap;
     }
-
     .borda {
       border-top: 1px solid #ddd;
       border-left: 0;
@@ -237,7 +236,8 @@ export const ConectContainer = styled.div`
 
 export const Conectdiv = styled.div`
   display: flex;
-  width: 100%;`
+  width: 100%;
+  `
 
 export const CenteredContainer = styled.div`
   display: flex;
