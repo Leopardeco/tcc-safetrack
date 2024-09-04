@@ -136,6 +136,7 @@ export const PrepareContainer = styled.div`
   max-width: 800px;
   margin: 0 auto;
   border-radius: 8px;
+  margin-bottom:5rem;
 `;
 export const Title = styled.div`
     color: white;
@@ -192,7 +193,9 @@ export const ConectContainer = styled.div`
   flex-direction: column;
   align-items: center;
 
+
   h1 {
+    max-width: 350px;
     text-align: center;
     margin-bottom: 7rem;
   }
@@ -223,6 +226,7 @@ export const ConectContainer = styled.div`
   @media (max-width: 768px) {
     display: flex;
     justify-content: center;
+    margin-bottom:5rem;
 
     div {
       margin-left: 0.7rem;
