@@ -76,7 +76,7 @@ export function Home() {
       <ConectContainer>
         <h1>Conecte-se ao SafeTrack</h1>
         <Conectdiv>
-          <div>
+          <div className="blue">
             <h2>Bluetooth</h2>  
             <p>Ative o Bluetooth em seu 
             smartphone.</p>

@@ -199,7 +199,8 @@ export const ConectContainer = styled.div`
 
   div {
     align-items: center;
-    gap: 1.5rem;
+    max-width: 600px;
+    gap: 2.7rem;
     padding: 1.25rem;
   }
 
@@ -237,6 +238,7 @@ export const ConectContainer = styled.div`
 export const Conectdiv = styled.div`
   display: flex;
   width: 100%;
+  
   `
 
 export const CenteredContainer = styled.div`
