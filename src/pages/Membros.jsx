@@ -24,7 +24,7 @@ export function Membros() {
           <h2>Nicollas Gomes</h2>
           <div>
           <img src= {linkedin} alt="" className="link"/>
-          <a href="https://www.linkedin.com/in/nicollas-gomes-4479952b9/">Nicollas Gomes</a>
+          <a href="https://www.linkedin.com/in/nicollas-gomes-4479952b9/" target="_blank">Nicollas Gomes</a>
           </div>
         </NickContainer>
         <MotaContainer>
@@ -32,7 +32,7 @@ export function Membros() {
           <h2>Guilherme Mota</h2>
           <div>
           <img src= {linkedin} alt="" className="link" />
-          <a href="https://www.linkedin.com/in/guilherme-mota-melo/">Guilherme Mota</a>
+          <a href="https://www.linkedin.com/in/guilherme-mota-melo/" target="_blank">Guilherme Mota</a>
           </div>
         </MotaContainer>
         <LeoContainer>
@@ -40,7 +40,7 @@ export function Membros() {
           <h2>Leonardo Amaral</h2>
           <div>
           <img src= {linkedin} alt="" className="link" />
-          <a href="https://www.linkedin.com/in/leonardo-amaral-356b602b9/">Leonardo Amaral</a>
+          <a href="https://www.linkedin.com/in/leonardo-amaral-356b602b9/" target="_blank">Leonardo Amaral</a>
           </div>
         </LeoContainer>
         <AlanContainer>
@@ -48,7 +48,7 @@ export function Membros() {
           <h2>Alan Cechi</h2>
           <div>
           <img src= {linkedin} alt="" className="link" />
-          <a href="">Alan Cechi</a>
+          <a href="https://www.linkedin.com/" target="_blank">Alan Cechi</a>
           </div>
         </AlanContainer>
       </MainContainer>

@@ -43,7 +43,9 @@ export const EtapasContainer = styled.div`
   }
 `;
 
-export const MainContainer = styled.div``;
+export const MainContainer = styled.div`
+  overflow: hidden;
+`;
 
 export const FunctionContainer = styled.div`
   h2 {
@@ -93,6 +95,7 @@ export const ParearContainer = styled.div`
   
 
   .step {
+    margin-top:1.25rem;
     width: 30vw;
     height: 10vh;
     display: flex;
@@ -101,7 +104,7 @@ export const ParearContainer = styled.div`
     border-radius: 1.5rem;
     padding: 1.25rem;
     margin-bottom: 1.25rem;
-    text-align: center;
+    text-align: left;
 
     @media (max-width: 768px) {
       flex-direction: column;

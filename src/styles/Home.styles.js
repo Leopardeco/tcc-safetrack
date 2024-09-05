@@ -13,6 +13,7 @@ export const MainContainer = styled.div`
     justify-content: space-around;
     height: 90vh; 
     width: 100vw; 
+    margin-bottom: 3rem;
   
 
     .text-button-container {

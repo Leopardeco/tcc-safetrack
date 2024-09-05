@@ -12,7 +12,7 @@ export function Home() {
   // Função para rolar suavemente para o CopyContainer
   const scrollToCopyContainer = () => {
     if (copyContainerRef.current) {
-      copyContainerRef.current.scrollIntoView({ behavior: 'smooth' });
+      copyContainerRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
   };
   return (
