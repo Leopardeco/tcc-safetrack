@@ -10,17 +10,19 @@ overflow: hidden;
 export const MainContainer = styled.div`
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     height: 90vh; 
     width: 100vw; 
-    margin-bottom: 3rem;
+    margin-bottom: 15rem;
+    gap: 10rem;
   
 
     .text-button-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 5rem;
+    
+    
 
     h1 {
       font-size:75px;
@@ -29,23 +31,25 @@ export const MainContainer = styled.div`
     }
 
     a {
-      background-color:${props => props.theme.buttonCollor};
-      color: #fff;
-      font-size:50px;
-      width: 100%;
-      height: 8rem;
-      border-radius: 10px;
-      cursor: pointer;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+  background-color: ${props => props.theme.buttonCollor};
+  color: #fff;
+  font-size: 50px;
+  width: 100%;
+  height: 8rem;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
 
-    a:hover{
-      color:${props => props.theme.buttonCollor};
-      background-color:#fff;
-    }
+a:hover {
+  color: ${props => props.theme.buttonCollor};
+  background-color: #fff;
+}
+
 
     @media (max-width: 768px) {
       margin-left: 0;
@@ -69,7 +73,7 @@ export const MainContainer = styled.div`
   }
 
   img {
-    max-width: 70%;
+    padding-top: 15rem;
     height: auto;
     display: block; 
     
@@ -81,14 +85,14 @@ export const MainContainer = styled.div`
 
 export const CopyContainer = styled.div`
   width: 100%;
-  max-width: 900px; 
+  max-width: 1000px; 
   min-height: 600px; 
   flex-wrap: wrap;
   border-radius: 12px; 
   background-color: #333;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 2rem;
-  text-align: center; 
+  text-align: justify; 
   margin-inline: auto;
   margin-bottom: 15rem ;
 
@@ -100,9 +104,10 @@ export const CopyContainer = styled.div`
   }
 
   p {
+    
     font-size: 3rem; // Tamanho da fonte do parágrafo
     color: #fff; // Cor do texto do parágrafo
-    line-height: 1.6; // Melhora a legibilidade do parágrafo
+    line-height: 1.3; // Melhora a legibilidade do parágrafo
     font-family: "Lexend", sans-serif;
   }
 
@@ -185,6 +190,7 @@ export const SectionMultiple = styled.div`
 
 
 export const ConectContainer = styled.div`
+  
   margin-top: 7rem;
   width: 100%;
   max-width: 1000px;
@@ -244,6 +250,7 @@ export const Conectdiv = styled.div`
   display: flex;
   width: 100%;
   
+  
   `
 
 export const CenteredContainer = styled.div`
@@ -268,7 +275,7 @@ export const RateContainer = styled.div`
   p{
     max-width: 700px;
     flex-wrap:wrap;
-    text-align: center;
+    text-align: justify;
     font-family: "Lexend", sans-serif;
   }
 
@@ -280,6 +287,7 @@ export const RateContainer = styled.div`
       border-radius: 10px;
       cursor: pointer;
       text-decoration: none;
+      transition: background-color 0.15s ease, color 0.15s ease;
     }
 
     a:hover{
