@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import { Home } from "./pages/Home"
 import { Membros } from "./pages/Membros"
 import {Funcionamento} from "./pages/Funcionamento"
+import {Referencia} from "./pages/Referencia"
 import { ThemeProvider } from "styled-components"
 import { theme } from "./styles/theme.js"
 import { GlobalStyle } from "./styles/global.js"
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
     path: "/tecnologia",
     element: <Tecnologia />,
   },
+  {
+    path: "/referencia",
+    element: <Referencia />,
+  },
 ])
 
 export function App() {
@@ -39,4 +44,3 @@ export function App() {
     </ThemeProvider>
   )
 }
-

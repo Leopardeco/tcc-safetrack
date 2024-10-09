@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { HeadContainer, LeftItem, CenterItemsContainer, CenterItem, HamburgerMenu } from "../styles/Header.styles.js";
 import logo from "../assets/logo.png";
 import engrenagem from "../assets/funcionamento.png";
+import referencia from "../assets/referencia.png";
 import tecnologia from "../assets/tecnologia.png";
 import equipe from "../assets/equipe.png";
 
@@ -42,6 +43,12 @@ export function Header({ activeItem }) {
           <CenterItem $isActive={activeItem === 'equipe'}>
             <img src={equipe} alt="três bonecos apontando para uma engrenagem" />
             <p>Equipe</p>
+          </CenterItem>
+        </Link>
+        <Link to="/referencia" onClick={() => setMenuOpen(false)}>
+          <CenterItem $isActive={activeItem === 'referencia'}>
+            <img src={referencia} alt="referencia" />
+            <p className="paragraph">Referências</p>
           </CenterItem>
         </Link>
       </CenterItemsContainer>

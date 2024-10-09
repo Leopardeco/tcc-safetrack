@@ -1,4 +1,14 @@
-import { CardContainer, MainContainer, CopyContainer, PrepareContainer, ConectContainer, RateContainer, SectionMultiple, Conectdiv, CenteredContainer, Title} from "../styles/Home.styles.js"
+import { 
+  CardContainer,
+  MainContainer,
+  CopyContainer,
+  PrepareContainer,
+  ConectContainer,
+  RateContainer, 
+  SectionMultiple,
+  Conectdiv, 
+  CenteredContainer, 
+  Title} from "../styles/Home.styles.js"
 import aeroporto from "../assets/aeroporto.png"
 import bgComoUsar from "../assets/bgcomousar.png"
 import {Header} from "./Header"
@@ -30,8 +40,15 @@ export function Home() {
         certeza de que suas malas estão
         sempre seguras e localizáveis.</h1>
         <p>O <span>Safetrack</span> é o dispositivo de rastreamento e acompanhamento de malas de 
-        viagem oferece essa tranquilidade, permitindo que você se concentre  m 
+        viagem oferece essa tranquilidade, permitindo que você se concentre  em 
         aproveitar sua jornada, mas ciente da situação da sua bagagem.</p>
+        <div className="testimonial">
+        <p>"O Safetrack me deu tranquilidade durante toda a minha viagem! Eu sempre sabia onde minhas malas estavam!" - Julia Matos</p>
+        <p>"O Safetrack me traz segurança e certeza que minha mala está segura!" - Rafael Silva</p>
+        <p>"O Safetrack é um dispositivo brilhante! Eu adorei o produto e super indico!" - Cleide Pires</p>
+      </div>
+      
+
     </CopyContainer>
     <PrepareContainer>
       <Title>Prepare-se para viajar</Title>
@@ -76,7 +93,7 @@ export function Home() {
       <ConectContainer>
         <h1>Conecte-se ao SafeTrack</h1>
         <Conectdiv>
-          <div className="blue">
+          <div className="borda">
             <h2>Bluetooth</h2>  
             <p>Ative o Bluetooth em seu 
             smartphone.</p>
