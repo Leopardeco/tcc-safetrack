@@ -176,11 +176,6 @@ export const SectionMultiple = styled.div`
     gap: 30px; 
 
     section {
-
-      &:hover {
-      transform: scale(1.02); /* Leve aumento no tamanho ao passar o mouse */
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Sombra mais profunda no hover */
-    }
       display: flex;
       flex-direction: column;
       min-width: 300px;
@@ -227,10 +222,6 @@ export const ConectContainer = styled.div`
   }
 
   .borda, .blue {
-    &:hover {
-      transform: scale(1.02); /* Leve aumento no tamanho ao passar o mouse */
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Sombra mais profunda no hover */
-    }
     flex: 1; /* Faz com que cada coluna ocupe o mesmo espaço */
     padding: 2rem;
     background-color: #333;

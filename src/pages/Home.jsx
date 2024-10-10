@@ -43,9 +43,9 @@ export function Home() {
         viagem oferece essa tranquilidade, permitindo que você se concentre  em 
         aproveitar sua jornada, mas ciente da situação da sua bagagem.</p>
         <div className="testimonial">
-        <p>"O Safetrack me deu tranquilidade durante toda a minha viagem! Eu sempre sabia onde minhas malas estavam!" - Julia Matos</p>
-        <p>"O Safetrack me traz segurança e certeza que minha mala está segura!" - Rafael Silva</p>
-        <p>"O Safetrack é um dispositivo brilhante! Eu adorei o produto e super indico!" - Cleide Pires</p>
+        <p>"O Safetrack é uma ideia ótima, acredito no potencial desse projeto!" - Isabelly Sophia</p>
+        <p>"O Safetrack vai me trazer segurança e certeza que minha mala estará segura!" - Waldir Carmo</p>
+        <p>"O Safetrack é um protótipo brilhante! Eu adorei o produto e super indico!" - Arthur Ulloa</p>
       </div>
       
 

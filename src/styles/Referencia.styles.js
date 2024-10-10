@@ -10,9 +10,10 @@ export const ReferencesContainer = styled.div`
   justify-content: center; /* Centraliza verticalmente */
 
   h1 {
-    font-size: 2.5rem;
+    min-width:800px;
+    font-size: 6rem;
     color: #fff;
-    margin-bottom: 2rem;
+    margin-bottom: 8rem;
     text-align: center;
   }
 `;
@@ -27,13 +28,13 @@ export const ReferencesGrid = styled.div`
 `;
 
 export const ReferenceCard = styled.div`
-  background-color: rgba(255, 255, 255,0.9);
+  background: #333;
   padding: 3rem;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   font-size: 2.4rem;
   line-height: 2.4;
-  color: #333;
+  color: #ddd;
   width: 80%;
   max-width: 700px; /* Limita a largura máxima do card */
   height: auto;
@@ -48,7 +49,7 @@ export const ReferenceCard = styled.div`
   }
 
   strong {
-    color: #0073e6;
+    color: #59a1e8;
   }
 
   @media (max-width: 768px) {
