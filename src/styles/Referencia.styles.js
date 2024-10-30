@@ -3,19 +3,30 @@ import styled from "styled-components";
 export const ReferencesContainer = styled.div`
   max-width: 800px;
   margin: 0 auto;
-  padding: 3rem 1.5rem;
+  padding: 0 1.5rem 3rem 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center; /* Centraliza verticalmente */
 
   h1 {
-    min-width:800px;
+    white-space: nowrap;
     font-size: 6rem;
     color: #fff;
-    margin-bottom: 8rem;
+    margin-block: 6rem;
     text-align: center;
   }
+
+    @media (max-width: 768px) {
+      h1{
+        font-size: 4rem;
+        white-space: wrap;
+      }
+      
+
+    }
+  
+  
 `;
 
 export const ReferencesGrid = styled.div`

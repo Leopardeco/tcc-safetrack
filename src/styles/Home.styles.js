@@ -256,7 +256,7 @@ export const ConectContainer = styled.div`
     }
 
     .borda {
-      border-top: 1px solid #ddd;
+      
       border-left: 0;
     }
   }
@@ -270,6 +270,7 @@ export const Conectdiv = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column; /* Empilha os elementos em telas menores */
+    gap: 3rem;
   }
 `;
 
@@ -279,7 +280,7 @@ export const CenteredContainer = styled.div`
   justify-content: center;
   height: 60vh;
   width: 100vw;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
 `;
 
 
