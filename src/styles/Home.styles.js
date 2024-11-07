@@ -330,6 +330,7 @@ export const RateContainer = styled.div`
 `
 
 export const VideoContainer = styled.div`
+  
   h1 {
     margin-bottom: 5rem;
     font-size: 3rem;
@@ -376,6 +377,7 @@ export const VideoContainer = styled.div`
 
   /* Estilo para o vídeo */
   video {
+    margin-bottom: 5rem;
     width: 100%;
     height: auto;
     max-width: 100%;
