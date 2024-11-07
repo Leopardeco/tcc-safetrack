@@ -1,4 +1,5 @@
 import { 
+  VideoContainer,
   CardContainer,
   MainContainer,
   CopyContainer,
@@ -12,6 +13,7 @@ import {
 import aeroporto from "../assets/aeroporto.png"
 import bgComoUsar from "../assets/bgcomousar.png"
 import {Header} from "./Header"
+import videogame from "../assets/game.mp4"
 import avalie from "../assets/avalie.png"
 import { useRef } from 'react';
 
@@ -115,9 +117,18 @@ export function Home() {
     </CenteredContainer>
     <RateContainer>
       <h1>Avalie-nos</h1>
-      <p>Olá, Tester! Gostaríamos muito da sua ajuda para avaliar o nosso site Safe Track. Seu feedback é essencial para melhorarmos e oferecermos uma experiência ainda melhor. Visite o Safe Track e compartilhe suas impressões conosco. Sua opinião faz toda a diferença! Agradecemos desde já pela sua contribuição.</p>
+      <p>Olá, Tester! Gostaríamos muito da sua ajuda para avaliar o nosso site <span>SafeTrack</span>. Seu feedback é essencial para melhorarmos e oferecermos uma experiência ainda melhor. Visite o Safe Track e compartilhe suas impressões conosco. Sua opinião faz toda a diferença! Agradecemos desde já pela sua contribuição.</p>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSe9q5HVgD9xndb_w-Pv_R2JLdimY7jIXMdTU4TK6CcPK39ABw/viewform" target="_blank">Formulário</a>
     </RateContainer>
+    <VideoContainer>
+    <h1>Gameplay - SafeTrack</h1>
+        <div className="video-wrapper">
+          <video controls>
+            <source src={videogame} type="video/mp4" />
+            Seu navegador não suporta o elemento de vídeo.
+          </video>
+        </div>
+    </VideoContainer>
     </CardContainer>
     
   )

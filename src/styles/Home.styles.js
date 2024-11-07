@@ -5,7 +5,10 @@ import avalie from "../assets/avalie.png"
 export const CardContainer = styled.div`
 overflow: hidden;
 
+
 `
+
+
 
 export const MainContainer = styled.div`
     display: flex;
@@ -13,7 +16,7 @@ export const MainContainer = styled.div`
     justify-content: center;
     height: 90vh; 
     width: 100vw; 
-    margin-bottom: 15rem;
+    margin-bottom: 30rem;
     gap: 10rem;
   
 
@@ -156,7 +159,7 @@ export const PrepareContainer = styled.div`
   max-width: 800px;
   margin: 0 auto;
   border-radius: 8px;
-  margin-bottom:5rem;
+  margin-bottom:20rem;
 
   
 `;
@@ -280,7 +283,7 @@ export const CenteredContainer = styled.div`
   justify-content: center;
   height: 60vh;
   width: 100vw;
-  margin-bottom: 10rem;
+  margin-bottom: 30rem;
 `;
 
 
@@ -293,7 +296,7 @@ export const RateContainer = styled.div`
   width: 100%;
   padding: 2rem;
   gap: 5rem;
-  margin-bottom:3rem; 
+  margin-bottom:20rem; 
 
 
   p{
@@ -319,4 +322,65 @@ export const RateContainer = styled.div`
       background-color:#fff;
     }
     
+    span{
+      font-weight: 700; /* Peso da fonte mais forte para destaque */
+      color: #4595A5;
+    }
+
 `
+
+export const VideoContainer = styled.div`
+  h1 {
+    margin-bottom: 5rem;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow: hidden; /* Garante que o conteúdo não vaze para fora do container */
+
+  /* Ajustes para diferentes tamanhos de tela */
+
+  @media (max-width: 1024px) {
+    @media (max-width: 1024px) {
+    max-width: 90%;
+    padding: 2rem;
+  }
+  }
+
+  @media (max-width: 1024px) {
+    max-width: 90%;
+    padding: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 1rem;
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  /* Estilo para o vídeo */
+  video {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover; /* Faz com que o vídeo se ajuste sem distorcer */
+  }
+`;
+
+
