@@ -57,7 +57,7 @@ export function Funcionamento() {
             <div className="content">
               <h2>Funcionalidades Adicionais</h2>
               <p>
-                Consulte o histórico de localizações. Configure alertas de
+                Consulte o histórico de localizações. <br />Configure alertas de
                 distância. <br />Acesse suporte técnico pelo app.
               </p>
             </div>

@@ -287,7 +287,7 @@ export const AdaptadorContainer = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 3rem;
+  
 
   div{
     gap:5rem;
@@ -310,6 +310,58 @@ export const AdaptadorContainer = styled.section`
   p {
     font-size: 2rem;
     color: #ddd;
+    line-height: 1.6;
+    font-family: "Lexend", sans-serif;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    width: 80vw;
+    margin-inline: 4rem;
+    }
+
+  @media (max-width: 350px) {
+    h2{
+      font-size: 3rem;
+    }
+    img{
+      width: 80vw;
+    }
+  }
+`;
+
+export const BlueContainer = styled.section`
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+
+  div{
+    gap:5rem;
+    max-width: 400px;
+  }
+
+  h2 {
+    font-size: 3.75rem;
+    color: #000;
+    margin-bottom: 2rem;
+  }
+
+  img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 2rem;
+    color: #000;
     line-height: 1.6;
     font-family: "Lexend", sans-serif;
   }

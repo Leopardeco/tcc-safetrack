@@ -87,7 +87,7 @@ export const ParearContainer = styled.div`
     width: 30vw;
     min-height: 10vh;
     display: flex;
-    flex-direction: row; /* Organiza o número à esquerda e o texto à direita */
+    flex-direction: row; 
     align-items: center;
     background-color: #fff;
     border-radius: 1.5rem;
@@ -104,6 +104,7 @@ export const ParearContainer = styled.div`
     @media (max-width: 480px) {
       width: 80vw;
       padding: 1rem;
+    
     }
   }
 
@@ -119,7 +120,7 @@ export const ParearContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 1.25rem; /* Espaço entre número e texto */
+    margin-right: 1.25rem; 
 
     @media (max-width: 768px) {
       width: 4rem;
@@ -137,7 +138,7 @@ export const ParearContainer = styled.div`
   .content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Garante alinhamento à esquerda */
+    align-items: flex-start; 
   }
 
   h2 {
@@ -159,7 +160,7 @@ export const ParearContainer = styled.div`
     font-size: 1rem;
     line-height: 1.5;
     font-family: "Lexend", sans-serif;
-    margin-top: 0.5rem; /* Espaço entre o título e o parágrafo */
+    margin-top: 0.5rem; 
     text-align: left;
 
     @media (max-width: 768px) {

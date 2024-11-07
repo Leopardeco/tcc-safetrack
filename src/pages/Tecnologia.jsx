@@ -1,10 +1,12 @@
 import {Header} from "./Header.jsx"
+import bluetooth from "../assets/bluetooth.png"
 import arduino from "../assets/arduino.png"
 import adaptador from "../assets/adaptador.png"
 import gps from "../assets/gps.png"
 import radar from "../assets/radar.png"
 import ldr from "../assets/ldr.png"
 import {
+    BlueContainer,
     GeralContainer,
     HeadContainer,
     ArduinoContainer,
@@ -64,6 +66,13 @@ export function Tecnologia() {
                     </div>
                     <img src={adaptador} alt="" />
                 </AdaptadorContainer>
+                <BlueContainer>
+                <div>
+                    <h2>Módulo Bluetooth HC-05</h2>
+                    <p>Este módulo está sendo utilizado para fazer uma conexão bluetooth com o App.</p>
+                    </div>
+                    <img src={bluetooth} alt="" />
+                </BlueContainer>
             </MainContainer>
         </GeralContainer>
     )
