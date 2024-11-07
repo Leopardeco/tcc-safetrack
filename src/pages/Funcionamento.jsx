@@ -18,7 +18,7 @@ export function Funcionamento() {
       </HeaderContainer>
       <FunctionContainer>
         <ImagemContainer>
-            <img src={explainimg} alt="Ilustração do SafeTrack" /> 
+          <img src={explainimg} alt="Ilustração do SafeTrack" /> 
         </ImagemContainer>
         <h2>
           Instruções de Uso do Dispositivo de <br />
@@ -29,7 +29,7 @@ export function Funcionamento() {
         <ParearContainer>
           <div className="step">
             <div className="numero">1</div>
-            <div>
+            <div className="content">
               <h2>Parear com o Celular</h2>
               <p>
                 Baixe o app SafeTrack. <br />
@@ -42,7 +42,7 @@ export function Funcionamento() {
         <ParearContainer>
           <div className="step">
             <div className="numero">2</div>
-            <div>
+            <div className="content">
               <h2>Monitoramento em tempo real</h2>
               <p>
                 Receba notificações sobre a localização e status da bagagem. <br />
@@ -54,7 +54,7 @@ export function Funcionamento() {
         <ParearContainer>
           <div className="step">
             <div className="numero">3</div>
-            <div>
+            <div className="content">
               <h2>Funcionalidades Adicionais</h2>
               <p>
                 Consulte o histórico de localizações. Configure alertas de
