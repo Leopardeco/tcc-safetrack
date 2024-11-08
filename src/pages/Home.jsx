@@ -123,11 +123,12 @@ export function Home() {
     <VideoContainer>
     <h1>Gameplay - SafeTrack</h1>
         <div className="video-wrapper">
-          <video controls>
-            <source src={videogame} type="video/mp4" />
-            Seu navegador não suporta o elemento de vídeo.
-          </video>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/UWRL64ZTnsY?si=OSazEMIsPQUtWivL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
+      <h2>Funcionando - SafeTrack</h2>
+        <div className="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pBj9BgdwSc4?si=vcq2qbvS-RlKgPer" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>    
     </VideoContainer>
     </CardContainer>
     
