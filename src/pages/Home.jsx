@@ -126,7 +126,7 @@ export function Home() {
         <iframe width="560" height="315" src="https://www.youtube.com/embed/UWRL64ZTnsY?si=OSazEMIsPQUtWivL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       <h2>Funcionando - SafeTrack</h2>
-        <div className="video-wrapper">
+        <div className="video-wrappe">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/pBj9BgdwSc4?si=vcq2qbvS-RlKgPer" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>    
     </VideoContainer>
